@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.10)
+project(LEETCODE)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON) # 用于clangd
+
+# 自动包含所有子目录
+file(GLOB problem_dirs "problems/*")
+foreach(dir ${problem_dirs})
+    file(GLOB sources "${dir}/*.cpp")
+    if(sources)
+        get_filename_component(target_name ${dir} NAME)
+        add_executable(${target_name} ${sources})
+    endif()
+endforeach()
