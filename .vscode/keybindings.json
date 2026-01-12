@@ -1,0 +1,8 @@
+[
+  {
+    "key": "ctrl+alt+a",
+    "command": "workbench.action.toggleSetting",
+    "args": "editor.inlineSuggest.enabled",
+    "when": "editorTextFocus"
+  }
+]

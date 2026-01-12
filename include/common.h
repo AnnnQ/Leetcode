@@ -3,6 +3,8 @@
 #include <string>
 #include <unordered_map>
 #include <iostream>
+#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 
 // 链表节点定义
