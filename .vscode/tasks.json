@@ -7,8 +7,6 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "-I",
-                "e:/Leetcode/include", // 你的头文件目录
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
